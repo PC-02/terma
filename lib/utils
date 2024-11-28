@@ -104,7 +104,7 @@ check_firacode() {
         bannerColor "Your system has Fira Code installed." "green" "*"
     else
         bannerColor "Installing Fira Code Nerd font..." "magenta" "*"
-        $(brew --prefix)/bin/brew tap homebrew/cask-fonts && $(brew --prefix)/bin/brew install --cask font-fira-code-nerd-font || exit 1
+        $(brew --prefix)/bin/brew install --cask font-fira-code-nerd-font || exit 1
         bannerColor "Fira Code font installation completed." "green" "*"
     fi
 }
